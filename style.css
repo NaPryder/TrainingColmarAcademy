@@ -1,0 +1,501 @@
+html body{
+  --font-color: #333;
+  --tabs-color: #535353;
+  --box-color: #c2c2c2;
+  --box-color2: #d8d8d8;
+  --border-color: #c2c2c2;
+  --link-btn: #2192FF;
+  --card-color: white;
+
+  --transition_03: all .3s ease-in-out;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+  color:var(--font-color);
+  max-width: 100%;
+  border: 1px solid var(--border-color);
+  /* min-width: 100vh; */
+}
+
+/* Nav bar */
+nav {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 24px;
+}
+
+nav .logo-content{
+  display: flex;
+  align-items: center;
+}
+
+nav .logo-content img{
+  width: 30px;
+  height: 30px;
+  margin: 0 10px 0 0;
+}
+
+nav .menu-tabs {
+  display: flex;
+  flex-direction: row;
+}
+nav .menu-tabs a{
+  margin-left: 16px;
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+
+
+/* Section-1 */
+.section-1 {
+  display: flex;
+  padding: 32px 0 32px 24px ;
+  background-color: var(--box-color);
+}
+
+.section-1 img{
+  width: 60%;
+  margin-right: 24px;
+}
+
+.section-1 .section1-content{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  justify-content: center;
+}
+
+.section-1 .section1-content strong {
+  font-size: 36px;
+}
+.section-1 .section1-content p {
+  font-weight: 450;
+}
+.section-1 .section1-content button {
+  border: 0;
+  padding: 8px 0;
+  font-size: 18px;
+  color: white;
+  background-color: var(--tabs-color);
+  cursor: pointer;
+  transition: var(--transition_03);
+}
+.section-1 .section1-content button:hover {
+  font-size: 20px;
+}
+
+
+/* Section-2 */
+.section-2 {
+  display: flex;
+  padding: 32px 0 32px 24px;
+}
+
+.section-2 > .left-side {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-right: 24px;
+}
+.section-2 > .left-side .left-content {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.section-2 > .left-side .left-content strong{
+  margin-bottom: 24px ;
+  font-size: 36px;
+}
+
+.section-2 > .left-side .left-content .qoute-from{
+  font-weight: 450;
+}
+
+.section-2 > .rigth-side{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  border: 1px solid var(--box-color);
+}
+
+.section-2 > .rigth-side .side-item{
+  display: flex;
+  border: 1px solid var(--box-color);
+}
+.section-2 > .rigth-side .active {
+  background-color: var(--box-color);
+}
+.section-2 > .rigth-side .side-item >img {
+  height: auto;
+  width: 35%;
+  margin: 16px;
+}
+.section-2 > .rigth-side .side-item .side-item-cintent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+}
+
+.section-2 > .rigth-side .side-item .side-item-cintent strong {
+  font-size: 24px;
+}
+.section-2 > .rigth-side .side-item .side-item-cintent p {
+  margin: 8px 0;
+}
+.section-2 > .rigth-side .side-item .side-item-cintent a {
+  text-decoration: none;
+  color: var(--link-btn);
+  transition: var(--transition_03);
+}
+.section-2 > .rigth-side .side-item .side-item-cintent a:hover{
+  text-shadow: 0 0 1px;
+}
+
+
+/* Section-3 */
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--box-color);
+}
+
+.section-3 > strong{
+  text-align: center;
+  font-size: 32px;
+  margin: 32px 0;
+}
+.section-3 .grid-template{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fit, 1fr);  
+  margin: 0 72px 32px 72px;
+  grid-gap: 32px;
+}
+.section-3 > .grid-template > .course{
+  background-color: var(--card-color);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: var(--transition_03);
+}
+.section-3 > .grid-template > .course:hover{
+  box-shadow: 5px 5px 20px 10px;
+}
+
+.section-3 > .grid-template > .course .image-container {
+  width: 100%;
+  height: 250px;
+
+}
+.section-3 > .grid-template > .course > .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.section-3  .grid-template > .course .course-detail {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  margin: 16px 16px 24px 16px;
+}
+.section-3  .grid-template > .course .course-detail > strong{
+  font-size: 28px ;
+}
+
+.section-3  .grid-template > .course .course-detail > .type{
+  font-size: 22px ;
+  font-weight: 400;
+  margin: 8px 0;
+}
+.section-3  .grid-template > .course .course-detail > .course-description{
+  font-size: 20px ;
+  font-weight: 300;
+  margin: 0;
+}
+
+
+
+/* Section-4 */
+.section-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-4>strong {
+  font-size: 32px;
+  margin: 32px 0;
+}
+.section-4 .exhibit{
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 32px 24px
+}
+
+.section-4 .exhibit .left-side{
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+  width: 60%;
+}
+.section-4 .exhibit .left-side img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  margin-bottom:24px ;
+}
+.section-4 .exhibit .left-side .caption strong{
+  font-size: 32px;
+  margin: 0;
+}
+.section-4 .exhibit .left-side .caption p{
+  margin-top: 8px;
+}
+
+.section-4 .exhibit .rigth-side{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.section-4 .exhibit .rigth-side .side-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  transition: var(--transition_03);
+}
+
+.section-4 .exhibit .rigth-side .side-item:hover {
+  background-color: var(--box-color);
+}
+
+.section-4 .exhibit .rigth-side .side-item img{
+  width: 35%;
+  height: auto;
+  object-fit: cover;
+  margin: 16px;
+
+}
+/* .section-4 .exhibit .rigth-side  .active{
+  background-color: var(--box-color);
+} */
+.section-4 .exhibit .rigth-side .side-item .side-item-content{
+  width: 65%;
+
+}
+.section-4 .exhibit .rigth-side .side-item .side-item-content strong{
+  font-size: 30px;
+
+}
+
+
+
+/* Footer */
+footer {
+  margin:16px 24px 36px 24px;
+  display: flex;
+  justify-content: space-between;
+}
+footer a{
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+
+
+/* For Desktop View */
+@media screen and (min-width: 1024px)  {
+  /* .section-1 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--box-color);
+  } */
+}
+
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+  /* .section-1 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--box-color);
+  } */
+}
+
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  .section-1 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--box-color);
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 0;
+  }
+  .section-1 img{
+    width: 100%;
+    margin: 0;
+  }
+  .section-1 .section1-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 16px 0;
+    justify-items: center;
+    align-items: center;
+  }
+  .section-1 .section1-content button {
+    width: 85%;
+  }
+
+
+
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding:16px 0;
+  }
+  
+  .section-2 > .left-side {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    width: 100%;
+    margin: 0 0 16px 0;
+  }
+  .section-2 > .left-side .left-content {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+  }
+  .section-2 > .left-side .left-content strong{
+    margin-bottom: 0 ;
+    font-size: 36px;
+  }
+
+  .section-2 > .rigth-side{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    border: 1px solid var(--box-color);
+  }
+  .section-2 > .rigth-side .side-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--box-color);
+  }
+  .section-2 > .rigth-side .side-item >img {
+    height: auto;
+    width: 90%;
+    margin: 16px;
+  }
+  .section-2 > .rigth-side .side-item .side-item-cintent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 85%;
+    margin-bottom: 16px;
+  }
+
+
+
+
+  .section-3 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--box-color2);
+  }
+  .section-3 .grid-template{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);  
+    margin: 0 32px 32px 32px;
+    grid-gap: 8px;
+  }
+  .section-3 > .grid-template > .course{
+    background-color: var(--card-color);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: var(--transition_03);
+    background-color: var(--box-color);
+  }
+  .section-3 > .grid-template > .course .image-container {
+    width: 100%;
+    height: 0;
+  
+  }
+  .section-3 > .grid-template > .course > .image-container img {
+    display: none;
+  }
+ 
+  .section-3  .grid-template > .course .course-detail {
+    margin: 16px 16px 24px 16px;
+  }
+  .section-3  .grid-template > .course .course-detail > .type{
+    display: none;
+  }
+  .section-3  .grid-template > .course .course-detail > .course-description{
+    display: none;
+  }
+
+
+
+  .section-4 .exhibit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 0 0 32px 0
+  }
+  .section-4 .exhibit .left-side{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  .section-4 .exhibit .left-side img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    margin-bottom:24px ;
+  }
+  .section-4 .exhibit .left-side .caption {
+    margin: 0 16px;
+  }
+
+  .section-4 .exhibit .rigth-side{
+    display: none;
+  }
+
+
+}
+
+
