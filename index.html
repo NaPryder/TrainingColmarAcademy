@@ -6,191 +6,199 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Colmar Academy</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
 
-  <nav>
-    <div class="logo-content">
-      <img src="https://cdn-icons-png.flaticon.com/512/1532/1532508.png" alt="">
-      <b>COLMAR</b>
-      ACADEMY
-    </div>
-
-    <div class="menu-tabs">
-      <a href="#">On campus</a>
-      <a href="#">Online</a>
-      <a href="#">For companies</a>
-      <a href="#">Sign in</a>
-    </div>
-  </nav>
-
-  <!-- Section 1 -->
-  <div class="section-1">
-    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="section-1-img">
-
-    <div class="section1-content">
-      <strong>Learn something new everday</strong>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      <button>Start here</button>
-    </div>
+  <div>
+    <nav>
+      <div class="nav-bar">
+        <div class="logo-content">
+          <img src="https://cdn-icons-png.flaticon.com/512/1532/1532508.png" alt="">
+          <b>COLMAR</b>
+          ACADEMY
+        </div>
+        
+        <div class="menu-tabs">
+          <button id="btn-dark" onclick="handleDarkMode()">Dark</button>
+          <a href="#">On campus</a>
+          <a href="#">Online</a>
+          <a href="#">For companies</a>
+          <a href="#">Sign in</a>
+        </div>
+      </div>
+    </nav>
   </div>
 
-  <!-- Section 2 -->
-  <div class="section-2">
-    <div class="left-side">
-      <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="section-2-left-img">
-      <div class="left-content">
-        <strong>It doesn't hurt to keep practicing</strong>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae laudantium tempore, impedit reprehenderit ad assumenda? Quae officiis, est labore error eos laboriosam reprehenderit distinctio? Sed pariatur debitis, facilis, harum enim repellat fugiat voluptas voluptatibus sit beatae consequuntur veniam adipisci incidunt?</p>
-        <p class="qoute-from">Emanuel, Sr Strategist at Hiring.com</p>
-      </div>
-    </div>
-
-    <div class="rigth-side">
-      <div class="side-item">
-        <img src="https://images.unsplash.com/photo-1597589827317-4c6d6e0a90bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="">
-        <div class="side-item-cintent">
-          <strong>Orientation date</strong>
-          <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-          <a href="#">Read more</a>
-        </div>
-      </div>
-
-      <div class="side-item">
-        <img src="https://images.unsplash.com/photo-1600354587397-681c16c184bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="">
-        <div class="side-item-cintent">
-          <strong>Our campus</strong>
-          <p>Find which campus is close by you</p>
-          <a href="#">Read more</a>
-        </div>
-      </div>
-
-      <div class="side-item active">
-        <img src="https://images.unsplash.com/photo-1593875460489-aa913d8a0fe2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="">
-        <div class="side-item-cintent">
-          <strong>Our guest lecture</strong>
-          <p>Join a jeynote with Oliver Sack about music in medical treatment</p>
-          <a href="#">Read more</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Section 3 -->
-  <div class="section-3">
-    <strong>Start learning</strong>
-    <div class="grid-template">
-
-      <div class="course">
-        <div class="image-container">
-          <img src="https://images.unsplash.com/photo-1532522750741-628fde798c73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="software-dev-img">
-        </div>
-        <div class="course-detail">
-          <strong>Software engineer</strong>
-          <p class="type">COURSE</p>
-          <p class="course-description">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum quibusdam, sapiente nulla distinctio recusandae similique.
-          </p>
-        </div>
-      </div>
-
-      <div class="course">
-        <div class="image-container">
-          <img src="https://images.unsplash.com/photo-1532522750741-628fde798c73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="software-dev-img">
-        </div>
-        <div class="course-detail">
-          <strong>Software engineer</strong>
-          <p class="type">COURSE</p>
-          <p class="course-description">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum quibusdam, sapiente nulla distinctio recusandae similique.
-          </p>
-        </div>
-      </div>
-
-      <div class="course">
-        <div class="image-container">
-          <img src="https://images.unsplash.com/photo-1532522750741-628fde798c73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="software-dev-img">
-        </div>
-        <div class="course-detail">
-          <strong>Software engineer</strong>
-          <p class="type">COURSE</p>
-          <p class="course-description">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum quibusdam, sapiente nulla distinctio recusandae similique.
-          </p>
-        </div>
-      </div>
-
-      <div class="course">
-        <div class="image-container">
-          <img src="https://images.unsplash.com/photo-1532522750741-628fde798c73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="software-dev-img">
-        </div>
-        <div class="course-detail">
-          <strong>Software engineer</strong>
-          <p class="type">COURSE</p>
-          <p class="course-description">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum quibusdam, sapiente nulla distinctio recusandae similique.
-          </p>
-        </div>
-      </div>
-
-      <div class="course">
-        <div class="image-container">
-          <img src="https://images.unsplash.com/photo-1532522750741-628fde798c73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="software-dev-img">
-        </div>
-        <div class="course-detail">
-          <strong>Software engineer</strong>
-          <p class="type">COURSE</p>
-          <p class="course-description">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum quibusdam, sapiente nulla distinctio recusandae similique.
-          </p>
-        </div>
-      </div>
-
-      <div class="course">
-        <div class="image-container">
-          <img src="https://images.unsplash.com/photo-1532522750741-628fde798c73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="software-dev-img">
-        </div>
-        <div class="course-detail">
-          <strong>Software engineer</strong>
-          <p class="type">COURSE</p>
-          <p class="course-description">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum quibusdam, sapiente nulla distinctio recusandae similique.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="section-4">
-    <strong>Thesis exhibit</strong>
-    <div class="exhibit">
+  <div class="container">
+    <!-- Section 1 -->
+    <div class="section-1">
+      <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="section-1-img">
   
+      <div class="section1-content">
+        <strong>Learn something new everday</strong>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button>Start here</button>
+      </div>
+    </div>
+  
+    <!-- Section 2 -->
+    <div class="section-2">
       <div class="left-side">
-        <img src="https://images.unsplash.com/photo-1661961110671-77b71b929d52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Video">
-        <!-- <video src="">
-  
-        </video> -->
-        <div class="caption">
-          <strong>Reimagine urban</strong>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum rerum tempora maiores est a molestiae distinctio et nemo quia tenetur? Quos ex ipsa, vitae corporis officiis eum quo nulla at?</p>
+        <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="section-2-left-img">
+        <div class="left-content">
+          <strong>It doesn't hurt to keep practicing</strong>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae laudantium tempore, impedit reprehenderit ad assumenda? Quae officiis, est labore error eos laboriosam reprehenderit distinctio? Sed pariatur debitis, facilis, harum enim repellat fugiat voluptas voluptatibus sit beatae consequuntur veniam adipisci incidunt?</p>
+          <p class="qoute-from">Emanuel, Sr Strategist at Hiring.com</p>
         </div>
       </div>
   
       <div class="rigth-side">
-        <div class="side-item active">
-          <img src="https://images.unsplash.com/photo-1621600411688-4be93cd68504?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="">
-          <div class="side-item-content">
-            <strong>Fisma: Design and Prototype</strong>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio iste, nostrum explicabo molestiae aut quia.</p>
+        <div class="side-item">
+          <img src="https://images.unsplash.com/photo-1597589827317-4c6d6e0a90bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="">
+          <div class="side-item-cintent">
+            <strong>Orientation date</strong>
+            <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+            <a href="#">Read more</a>
           </div>
         </div>
-
+  
         <div class="side-item">
-          <img src="https://images.unsplash.com/photo-1621600411688-4be93cd68504?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="">
-          <div class="side-item-content">
-            <strong>Now and then</strong>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+          <img src="https://images.unsplash.com/photo-1600354587397-681c16c184bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="">
+          <div class="side-item-cintent">
+            <strong>Our campus</strong>
+            <p>Find which campus is close by you</p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+  
+        <div class="side-item active">
+          <img src="https://images.unsplash.com/photo-1593875460489-aa913d8a0fe2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="">
+          <div class="side-item-cintent">
+            <strong>Our guest lecture</strong>
+            <p>Join a jeynote with Oliver Sack about music in medical treatment</p>
+            <a href="#">Read more</a>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  
+    <!-- Section 3 -->
+    <div class="section-3">
+      <strong>Start learning</strong>
+      <div class="grid-template">
+  
+        <div class="course">
+          <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1532522750741-628fde798c73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="software-dev-img">
+          </div>
+          <div class="course-detail">
+            <strong>Software engineer</strong>
+            <p class="type">COURSE</p>
+            <p class="course-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum quibusdam, sapiente nulla distinctio recusandae similique.
+            </p>
+          </div>
+        </div>
+  
+        <div class="course">
+          <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1532522750741-628fde798c73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="software-dev-img">
+          </div>
+          <div class="course-detail">
+            <strong>Software engineer</strong>
+            <p class="type">COURSE</p>
+            <p class="course-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum quibusdam, sapiente nulla distinctio recusandae similique.
+            </p>
+          </div>
+        </div>
+  
+        <div class="course">
+          <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1532522750741-628fde798c73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="software-dev-img">
+          </div>
+          <div class="course-detail">
+            <strong>Software engineer</strong>
+            <p class="type">COURSE</p>
+            <p class="course-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum quibusdam, sapiente nulla distinctio recusandae similique.
+            </p>
+          </div>
+        </div>
+  
+        <div class="course">
+          <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1532522750741-628fde798c73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="software-dev-img">
+          </div>
+          <div class="course-detail">
+            <strong>Software engineer</strong>
+            <p class="type">COURSE</p>
+            <p class="course-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum quibusdam, sapiente nulla distinctio recusandae similique.
+            </p>
+          </div>
+        </div>
+  
+        <div class="course">
+          <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1532522750741-628fde798c73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="software-dev-img">
+          </div>
+          <div class="course-detail">
+            <strong>Software engineer</strong>
+            <p class="type">COURSE</p>
+            <p class="course-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum quibusdam, sapiente nulla distinctio recusandae similique.
+            </p>
+          </div>
+        </div>
+  
+        <div class="course">
+          <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1532522750741-628fde798c73?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="software-dev-img">
+          </div>
+          <div class="course-detail">
+            <strong>Software engineer</strong>
+            <p class="type">COURSE</p>
+            <p class="course-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum quibusdam, sapiente nulla distinctio recusandae similique.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="section-4">
+      <strong>Thesis exhibit</strong>
+      <div class="exhibit">
+    
+        <div class="left-side">
+          <img src="https://images.unsplash.com/photo-1661961110671-77b71b929d52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Video">
+          <!-- <video src="">
+    
+          </video> -->
+          <div class="caption">
+            <strong>Reimagine urban</strong>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum rerum tempora maiores est a molestiae distinctio et nemo quia tenetur? Quos ex ipsa, vitae corporis officiis eum quo nulla at?</p>
+          </div>
+        </div>
+    
+        <div class="rigth-side">
+          <div class="side-item active">
+            <img src="https://images.unsplash.com/photo-1621600411688-4be93cd68504?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="">
+            <div class="side-item-content">
+              <strong>Fisma: Design and Prototype</strong>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio iste, nostrum explicabo molestiae aut quia.</p>
+            </div>
+          </div>
+  
+          <div class="side-item">
+            <img src="https://images.unsplash.com/photo-1621600411688-4be93cd68504?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="">
+            <div class="side-item-content">
+              <strong>Now and then</strong>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+            </div>
           </div>
         </div>
       </div>
